@@ -1,52 +1,73 @@
-"use client";
+export default function Navbar() {
+  return (
+    <header
+      style={{
+        width: "100%",
+        background: "#8B1E72",
+        color: "white",
+        position: "sticky",
+        top: 0,
+        zIndex: 1000,
+        boxShadow: "0 2px 10px rgba(0,0,0,.15)"
+      }}
+    >
+      <div
+        className="container"
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          height: "80px"
+        }}
+      >
+        {/* Logo */}
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "10px"
+          }}
+        >
+          <span style={{ fontSize: "32px" }}>🐉</span>
 
-import Link from "next/link";
+          <h2
+            style={{
+              fontWeight: "bold",
+              fontSize: "28px"
+            }}
+          >
+            Hanzi Master
+          </h2>
+        </div>
 
+        {/* Menu */}
+        <nav
+          style={{
+            display: "flex",
+            gap: "30px",
+            alignItems: "center"
+          }}
+        >
+          <a href="/">Trang chủ</a>
 
-export default function Navbar(){
+          <a href="/hsk">HSK</a>
 
-return (
+          <a href="/tocfl">TOCFL</a>
 
-<nav className="navbar">
+          <a href="/dictionary">Từ điển</a>
 
+          <a href="/exam">Luyện thi</a>
 
-<div className="logo">
-🐉 Hanzi Master
-</div>
-
-
-<div className="links">
-
-<Link href="/">
-Trang chủ
-</Link>
-
-
-<Link href="/learn">
-📚 Học
-</Link>
-
-
-<Link href="/exam">
-📝 Thi
-</Link>
-
-
-<Link href="/dictionary">
-📖 Từ điển
-</Link>
-
-
-<Link href="/login">
-👤 Đăng nhập
-</Link>
-
-
-</div>
-
-
-</nav>
-
-);
-
+          <button
+            className="btn-primary"
+            style={{
+              padding: "12px 24px"
+            }}
+          >
+            Đăng nhập
+          </button>
+        </nav>
+      </div>
+    </header>
+  );
 }
