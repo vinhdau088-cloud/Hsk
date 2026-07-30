@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "hanzi": "你好",
+    "pinyin": "nǐ hǎo",
+    "meaning": "Xin chào",
+    "level": 1
+  },
+  {
+    "id": 2,
+    "hanzi": "謝謝",
+    "pinyin": "xiè xie",
+    "meaning": "Cảm ơn",
+    "level": 1
+  },
+  {
+    "id": 3,
+    "hanzi": "再見",
+    "pinyin": "zài jiàn",
+    "meaning": "Tạm biệt",
+    "level": 1
+  }
+]
