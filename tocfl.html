@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khóa Học TOCFL - Tiếng Trung Phồn Thể</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <button class="menu-toggle" id="openSidebar"><i class="fa-solid fa-bars"></i></button>
+            <a href="index.html" class="logo"><span>漢</span> TrungTOCFL</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="hsk.html">Khóa HSK</a></li>
+                <li><a href="tocfl.html" class="active">TOCFL</a></li>
+                <li><a href="dictionary.html">Từ điển</a></li>
+                <li><a href="exam.html">Luyện thi</a></li>
+                <li><a href="profile.html">Hồ sơ</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="login.html" class="btn-yellow"><i class="fa-solid fa-user"></i> Đăng nhập</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar Mobile -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo"><span>漢</span> TrungTOCFL</div>
+            <button class="close-btn" id="closeSidebar"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <ul class="sidebar-links">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Trang chủ</a></li>
+            <li><a href="hsk.html"><i class="fa-solid fa-book-open"></i> Khóa HSK</a></li>
+            <li><a href="tocfl.html" class="active"><i class="fa-solid fa-graduation-cap"></i> Khóa TOCFL</a></li>
+            <li><a href="dictionary.html"><i class="fa-solid fa-language"></i> Từ điển</a></li>
+            <li><a href="exam.html"><i class="fa-solid fa-pen-to-square"></i> Luyện thi</a></li>
+            <li><a href="profile.html"><i class="fa-solid fa-user"></i> Hồ sơ</a></li>
+        </ul>
+    </aside>
+
+    <main class="main-container page-padding">
+        <div class="page-header">
+            <h1>Luyện Thi Chứng Chỉ TOCFL</h1>
+            <p>Hệ thống đánh giá năng lực Hán ngữ Phồn thể chuẩn Đài Loan</p>
+        </div>
+
+        <div class="grid-cards">
+            <!-- Thẻ A1 -->
+            <div class="card tocfl-card">
+                <div class="tocfl-header">
+                    <span class="badge-gold">Nhập Môn</span>
+                    <h2>TOCFL A1</h2>
+                </div>
+                <p>Từ vựng phồn thể căn bản cho người mới học, luyện nghe nói giao tiếp hàng ngày.</p>
+                <div class="tocfl-features">
+                    <span><i class="fa-solid fa-check"></i> 500 Từ vựng</span>
+                    <span><i class="fa-solid fa-check"></i> Chữ Phồn Thể</span>
+                </div>
+                <button class="btn-yellow btn-full">Bắt đầu học A1</button>
+            </div>
+
+            <!-- Thẻ A2 -->
+            <div class="card tocfl-card">
+                <div class="tocfl-header">
+                    <span class="badge-gold">Cơ Bản</span>
+                    <h2>TOCFL A2</h2>
+                </div>
+                <p>Nâng cao khả năng diễn đạt, ngữ pháp phồn thể chuẩn du học Đài Loan.</p>
+                <div class="tocfl-features">
+                    <span><i class="fa-solid fa-check"></i> 1000 Từ vựng</span>
+                    <span><i class="fa-solid fa-check"></i> Luyện đề nghe & đọc</span>
+                </div>
+                <button class="btn-yellow btn-full">Bắt đầu học A2</button>
+            </div>
+
+            <!-- Thẻ B1 -->
+            <div class="card tocfl-card">
+                <div class="tocfl-header">
+                    <span class="badge-gold">Sơ Cấp</span>
+                    <h2>TOCFL B1</h2>
+                </div>
+                <p>Giao tiếp tự tin trong môi trường học tập, làm việc và sinh sống tại Đài Loan.</p>
+                <div class="tocfl-features">
+                    <span><i class="fa-solid fa-check"></i> 2500 Từ vựng</span>
+                    <span><i class="fa-solid fa-check"></i> Đề thi mô phỏng</span>
+                </div>
+                <button class="btn-yellow btn-full">Bắt đầu học B1</button>
+            </div>
+
+            <!-- Thẻ B2 -->
+            <div class="card tocfl-card">
+                <div class="tocfl-header">
+                    <span class="badge-gold">Trung Cấp</span>
+                    <h2>TOCFL B2</h2>
+                </div>
+                <p>Đạt trình độ chuyên sâu, làm việc chuyên nghiệp và học đại học/thạc sĩ.</p>
+                <div class="tocfl-features">
+                    <span><i class="fa-solid fa-check"></i> 5000 Từ vựng</span>
+                    <span><i class="fa-solid fa-check"></i> Phân tích ngữ pháp nâng cao</span>
+                </div>
+                <button class="btn-yellow btn-full">Bắt đầu học B2</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>&copy; 2026 TrungTOCFL. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

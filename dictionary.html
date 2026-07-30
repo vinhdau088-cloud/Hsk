@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Từ Điển Tiếng Trung</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <button class="menu-toggle" id="openSidebar"><i class="fa-solid fa-bars"></i></button>
+            <a href="index.html" class="logo"><span>漢</span> TrungTOCFL</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="hsk.html">Khóa HSK</a></li>
+                <li><a href="tocfl.html">TOCFL</a></li>
+                <li><a href="dictionary.html" class="active">Từ điển</a></li>
+                <li><a href="exam.html">Luyện thi</a></li>
+                <li><a href="profile.html">Hồ sơ</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="login.html" class="btn-yellow"><i class="fa-solid fa-user"></i> Đăng nhập</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar Mobile -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo"><span>漢</span> TrungTOCFL</div>
+            <button class="close-btn" id="closeSidebar"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <ul class="sidebar-links">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Trang chủ</a></li>
+            <li><a href="hsk.html"><i class="fa-solid fa-book-open"></i> Khóa HSK</a></li>
+            <li><a href="tocfl.html"><i class="fa-solid fa-graduation-cap"></i> Khóa TOCFL</a></li>
+            <li><a href="dictionary.html" class="active"><i class="fa-solid fa-language"></i> Từ điển</a></li>
+            <li><a href="exam.html"><i class="fa-solid fa-pen-to-square"></i> Luyện thi</a></li>
+            <li><a href="profile.html"><i class="fa-solid fa-user"></i> Hồ sơ</a></li>
+        </ul>
+    </aside>
+
+    <main class="main-container page-padding">
+        <div class="page-header">
+            <h1>Tra Cứu Từ Điển Thông Minh</h1>
+            <p>Tra từ vựng Hán tự, Pinyin, Phát âm âm thanh và Ví dụ trực quan</p>
+        </div>
+
+        <!-- Ô Tìm Kiếm -->
+        <div class="dict-search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="dictInput" placeholder="Nhập từ cần tra (Ví dụ: 你好, nǐ hǎo, Xin chào)..." value="你好">
+            <button class="btn-yellow" onclick="searchDict()">Tra từ</button>
+        </div>
+
+        <div class="dict-layout">
+            <!-- Danh sách từ -->
+            <div class="card dict-list-card">
+                <h3><i class="fa-solid fa-list"></i> Từ gợi ý / Đã tìm</h3>
+                <ul class="dict-list" id="dictList">
+                    <li class="active" onclick="selectWord('你好', 'nǐ hǎo', 'Xin chào', '你好！很高兴认识你。 (Xin chào! Rất vui được gặp bạn.)')">
+                        <strong>你好</strong> <span>nǐ hǎo</span>
+                    </li>
+                    <li onclick="selectWord('谢谢', 'xiè xie', 'Cảm ơn', '谢谢你的帮助。 (Cảm ơn sự giúp đỡ của bạn.)')">
+                        <strong>谢谢</strong> <span>xiè xie</span>
+                    </li>
+                    <li onclick="selectWord('再见', 'zài jiàn', 'Tạm biệt', '明天再见！ (Hẹn gặp lại ngày mai!)')">
+                        <strong>再见</strong> <span>zài jiàn</span>
+                    </li>
+                    <li onclick="selectWord('学习', 'xué xí', 'Học tập', '我喜欢学习汉语。 (Tôi thích học tiếng Trung.)')">
+                        <strong>学习</strong> <span>xué xí</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Khu vực hiển thị nghĩa & Nút phát âm -->
+            <div class="card dict-detail-card">
+                <div class="word-header">
+                    <div>
+                        <h2 id="displayHanzi">你好</h2>
+                        <span class="pinyin" id="displayPinyin">nǐ hǎo</span>
+                    </div>
+                    <!-- Nút phát âm -->
+                    <button class="btn-speech" onclick="speakWord()"><i class="fa-solid fa-volume-high"></i> Phát âm</button>
+                </div>
+                <hr class="divider">
+                <div class="word-meaning">
+                    <h4>Giải nghĩa:</h4>
+                    <p id="displayMeaning" class="meaning-text">Xin chào (Lời chào thông dụng trong tiếng Trung)</p>
+                </div>
+                <div class="word-example">
+                    <h4>Ví dụ:</h4>
+                    <p id="displayExample" class="example-text">你好！很高兴认识你。<br><i>(Xin chào! Rất vui được gặp bạn.)</i></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>&copy; 2026 TrungTOCFL. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

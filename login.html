@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập Tài Khoản</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="login-page-bg">
+    <div class="login-wrapper">
+        <div class="card login-card">
+            <a href="index.html" class="logo text-center"><span>漢</span> TrungTOCFL</a>
+            <h2>Đăng Nhập</h2>
+            <p class="subtitle">Chào mừng bạn quay trở lại học tập!</p>
+
+            <form onsubmit="event.preventDefault(); alert('Đăng nhập thành công!');">
+                <div class="form-group">
+                    <label><i class="fa-solid fa-envelope"></i> Email</label>
+                    <input type="email" placeholder="nhapemail@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label><i class="fa-solid fa-lock"></i> Mật khẩu</label>
+                    <input type="password" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn-yellow btn-full">Đăng nhập</button>
+            </form>
+
+            <div class="divider-text">Hoặc đăng nhập bằng</div>
+
+            <div class="social-login">
+                <button class="btn-social google"><i class="fa-brands fa-google"></i> Google</button>
+                <button class="btn-social facebook"><i class="fa-brands fa-facebook-f"></i> Facebook</button>
+            </div>
+
+            <p class="bottom-link">Chưa có tài khoản? <a href="#">Đăng ký ngay</a></p>
+        </div>
+    </div>
+</body>
+</html>

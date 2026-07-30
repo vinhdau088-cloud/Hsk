@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học Tiếng Trung & TOCFL - Trang Chủ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Sidebar Mobile -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo"><span>漢</span> TrungTOCFL</div>
+            <button class="close-btn" id="closeSidebar"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <ul class="sidebar-links">
+            <li><a href="index.html" class="active"><i class="fa-solid fa-house"></i> Trang chủ</a></li>
+            <li><a href="hsk.html"><i class="fa-solid fa-book-open"></i> Khóa HSK</a></li>
+            <li><a href="tocfl.html"><i class="fa-solid fa-graduation-cap"></i> Khóa TOCFL</a></li>
+            <li><a href="dictionary.html"><i class="fa-solid fa-language"></i> Từ điển</a></li>
+            <li><a href="exam.html"><i class="fa-solid fa-pen-to-square"></i> Luyện thi</a></li>
+            <li><a href="profile.html"><i class="fa-solid fa-user"></i> Hồ sơ</a></li>
+            <li><a href="login.html"><i class="fa-solid fa-right-to-bracket"></i> Đăng nhập</a></li>
+        </ul>
+    </aside>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <button class="menu-toggle" id="openSidebar"><i class="fa-solid fa-bars"></i></button>
+            <a href="index.html" class="logo"><span>漢</span> TrungTOCFL</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Trang chủ</a></li>
+                <li><a href="hsk.html">Khóa HSK</a></li>
+                <li><a href="tocfl.html">TOCFL</a></li>
+                <li><a href="dictionary.html">Từ điển</a></li>
+                <li><a href="exam.html">Luyện thi</a></li>
+                <li><a href="profile.html">Hồ sơ</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="login.html" class="btn-yellow"><i class="fa-solid fa-user"></i> Đăng nhập</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Chinh Phục Tiếng Trung HSK & TOCFL Dễ Dàng</h1>
+            <p>Lộ trình bài bản, kho từ vựng Flashcard phong phú cùng đề thi thử bám sát thực tế.</p>
+            
+            <!-- Search Bar Component -->
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" placeholder="Tìm từ vựng (Pinyin, Chữ Hán, Nghĩa)...">
+                <button class="btn-yellow">Tìm kiếm</button>
+            </div>
+
+            <div class="hero-actions">
+                <a href="hsk.html" class="btn-yellow btn-large"><i class="fa-solid fa-rocket"></i> Bắt đầu học</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <!-- Tiến độ học Component -->
+        <section class="section">
+            <h2 class="section-title"><i class="fa-solid fa-chart-line"></i> Tiến độ học tập của bạn</h2>
+            <div class="card card-progress">
+                <div class="progress-info">
+                    <div>
+                        <h3>Mục tiêu hiện tại: HSK 3 & TOCFL A2</h3>
+                        <p>Đã hoàn thành 65% lộ trình tuần này</p>
+                    </div>
+                    <span class="badge-gold">65%</span>
+                </div>
+                <div class="progress-bar-bg">
+                    <div class="progress-bar-fill" style="width: 65%;"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Khóa học HSK 1-6 -->
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title"><i class="fa-solid fa-book-bookmark"></i> Khóa học HSK 1 – 6</h2>
+                <a href="hsk.html" class="see-all">Xem tất cả <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="grid-cards">
+                <div class="card hsk-card">
+                    <span class="badge-purple">HSK 1</span>
+                    <h3>Tiếng Trung Cơ Bản 1</h3>
+                    <p>150 Từ vựng • 20 Bài học • 10 Đề thi</p>
+                    <a href="hsk.html" class="btn-yellow btn-sm">Bắt đầu</a>
+                </div>
+                <div class="card hsk-card">
+                    <span class="badge-purple">HSK 2</span>
+                    <h3>Tiếng Trung Cơ Bản 2</h3>
+                    <p>300 Từ vựng • 25 Bài học • 12 Đề thi</p>
+                    <a href="hsk.html" class="btn-yellow btn-sm">Bắt đầu</a>
+                </div>
+                <div class="card hsk-card">
+                    <span class="badge-purple">HSK 3</span>
+                    <h3>Tiếng Trung Sơ Cấp</h3>
+                    <p>600 Từ vựng • 30 Bài học • 15 Đề thi</p>
+                    <a href="hsk.html" class="btn-yellow btn-sm">Bắt đầu</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- TOCFL & Flashcard Cards -->
+        <section class="section">
+            <h2 class="section-title"><i class="fa-solid fa-cubes"></i> Tính năng nổi bật</h2>
+            <div class="grid-cards">
+                <div class="card feature-card">
+                    <div class="icon-box"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <h3>Chứng chỉ TOCFL</h3>
+                    <p>Luyện tập theo chuẩn phồn thể A1, A2, B1, B2 chuẩn Đài Loan.</p>
+                    <a href="tocfl.html" class="btn-yellow btn-sm">Khám phá TOCFL</a>
+                </div>
+                <div class="card feature-card">
+                    <div class="icon-box"><i class="fa-solid fa-clone"></i></div>
+                    <h3>Flashcard Thông Minh</h3>
+                    <p>Ghi nhớ từ vựng siêu tốc qua hệ thống thẻ học ghi nhớ ngắt quãng.</p>
+                    <a href="dictionary.html" class="btn-yellow btn-sm">Học Flashcard</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Component -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="logo"><span>漢</span> TrungTOCFL</div>
+                <p>Nền tảng học tiếng Trung HSK và TOCFL toàn diện dành cho người Việt.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Liên kết nhanh</h4>
+                <ul>
+                    <li><a href="hsk.html">Luyện HSK 1-6</a></li>
+                    <li><a href="tocfl.html">Luyện TOCFL</a></li>
+                    <li><a href="dictionary.html">Tra Từ Điển</a></li>
+                    <li><a href="exam.html">Đề Thi Thử</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Hỗ trợ</h4>
+                <ul>
+                    <li><a href="#">Hướng dẫn học</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Điều khoản sử dụng</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 TrungTOCFL. All rights reserved. Sẵn sàng cho GitHub & Vercel!</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư Viện Đề Thi - Luyện Thi HSK & TOCFL</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <button class="menu-toggle" id="openSidebar"><i class="fa-solid fa-bars"></i></button>
+            <a href="index.html" class="logo"><span>漢</span> TrungTOCFL</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="hsk.html">Khóa HSK</a></li>
+                <li><a href="tocfl.html">TOCFL</a></li>
+                <li><a href="dictionary.html">Từ điển</a></li>
+                <li><a href="exam.html" class="active">Luyện thi</a></li>
+                <li><a href="profile.html">Hồ sơ</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="login.html" class="btn-yellow"><i class="fa-solid fa-user"></i> Đăng nhập</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar Mobile -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo"><span>漢</span> TrungTOCFL</div>
+            <button class="close-btn" id="closeSidebar"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <ul class="sidebar-links">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Trang chủ</a></li>
+            <li><a href="hsk.html"><i class="fa-solid fa-book-open"></i> Khóa HSK</a></li>
+            <li><a href="tocfl.html"><i class="fa-solid fa-graduation-cap"></i> Khóa TOCFL</a></li>
+            <li><a href="dictionary.html"><i class="fa-solid fa-language"></i> Từ điển</a></li>
+            <li><a href="exam.html" class="active"><i class="fa-solid fa-pen-to-square"></i> Luyện thi</a></li>
+            <li><a href="profile.html"><i class="fa-solid fa-user"></i> Hồ sơ</a></li>
+        </ul>
+    </aside>
+
+    <main class="main-container page-padding">
+        <div class="page-header">
+            <h1>Thư Viện Đề Thi Thử</h1>
+            <p>Tổng hợp bộ đề mô phỏng chuẩn cấu trúc HSK & TOCFL mới nhất</p>
+        </div>
+
+        <div class="exam-list">
+            <!-- Đề 1 -->
+            <div class="card exam-card">
+                <div class="exam-info">
+                    <span class="badge-purple">HSK 1</span>
+                    <h3>Đề thi thử HSK 1 - Mã đề 101</h3>
+                    <p><i class="fa-regular fa-clock"></i> Thời gian: 35 phút • 40 Câu hỏi</p>
+                </div>
+                <div class="exam-level">
+                    <span class="level-tag easy">Dễ</span>
+                    <button class="btn-yellow">Bắt đầu làm bài</button>
+                </div>
+            </div>
+
+            <!-- Đề 2 -->
+            <div class="card exam-card">
+                <div class="exam-info">
+                    <span class="badge-purple">HSK 3</span>
+                    <h3>Đề thi thử HSK 3 - Mã đề 302</h3>
+                    <p><i class="fa-regular fa-clock"></i> Thời gian: 90 phút • 80 Câu hỏi</p>
+                </div>
+                <div class="exam-level">
+                    <span class="level-tag medium">Trung bình</span>
+                    <button class="btn-yellow">Bắt đầu làm bài</button>
+                </div>
+            </div>
+
+            <!-- Đề 3 -->
+            <div class="card exam-card">
+                <div class="exam-info">
+                    <span class="badge-gold">TOCFL A2</span>
+                    <h3>Đề thi mẫu TOCFL Band A - Đề 01</h3>
+                    <p><i class="fa-regular fa-clock"></i> Thời gian: 120 phút • 100 Câu hỏi</p>
+                </div>
+                <div class="exam-level">
+                    <span class="level-tag medium">Trung bình</span>
+                    <button class="btn-yellow">Bắt đầu làm bài</button>
+                </div>
+            </div>
+
+            <!-- Đề 4 -->
+            <div class="card exam-card">
+                <div class="exam-info">
+                    <span class="badge-purple">HSK 5</span>
+                    <h3>Đề thi mô phỏng HSK 5 - Mã đề 505</h3>
+                    <p><i class="fa-regular fa-clock"></i> Thời gian: 125 phút • 100 Câu hỏi</p>
+                </div>
+                <div class="exam-level">
+                    <span class="level-tag hard">Khó</span>
+                    <button class="btn-yellow">Bắt đầu làm bài</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>&copy; 2026 TrungTOCFL. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
