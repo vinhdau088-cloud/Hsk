@@ -1,29 +1,46 @@
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+
 
 export const metadata = {
-  title: "Hanzi Master",
-  description: "HSK & TOCFL Learning Platform",
+
+title:"Hanzi Master",
+
+description:"HSK TOCFL Learning"
+
 };
 
 
+
 export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
 
-  return (
+children,
 
-    <html lang="vi">
+}:{
 
-      <body>
+children:React.ReactNode;
 
-        {children}
+}){
 
-      </body>
 
-    </html>
+return (
 
-  );
+<html lang="vi">
+
+<body>
+
+
+<Navbar />
+
+
+{children}
+
+
+</body>
+
+</html>
+
+);
+
 
 }
