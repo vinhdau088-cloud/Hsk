@@ -3,44 +3,109 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HSK Learning</title>
-<style>
-body{
-font-family:Arial;
-background:#f5f5f5;
-text-align:center;
-padding:40px;
-}
-.card{
-background:white;
-max-width:500px;
-margin:auto;
-padding:20px;
-border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,.1);
-}
-button{
-padding:12px 20px;
-border:none;
-background:#ff4d4f;
-color:white;
-border-radius:10px;
-font-size:18px;
-}
-</style>
+<title>HSK Master</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
 </head>
+
 <body>
 
+<header>
+
+<div class="logo">
+📚 HSK Master
+</div>
+
+<div class="profile">
+👤
+</div>
+
+</header>
+
+<section class="hero">
+
+<h1>Học tiếng Trung mỗi ngày</h1>
+
+<p>Flashcard • Quiz • Phát âm • Thống kê</p>
+
+<input
+type="text"
+placeholder="🔍 Tìm từ vựng..."
+>
+
+</section>
+
+<section class="progress">
+
 <div class="card">
-<h1>📚 HSK Learning</h1>
-<h2>你好</h2>
-<p>Nǐ hǎo</p>
+
+<h3>Tiến độ hôm nay</h3>
+
+<div class="bar">
+
+<div class="fill"></div>
+
+</div>
+
+<p>70%</p>
+
+</div>
+
+</section>
+
+<section class="levels">
+
+<h2>Danh sách bài học</h2>
+
+<div class="grid">
+
+<div class="lesson">📖 HSK 1</div>
+<div class="lesson">📖 HSK 2</div>
+<div class="lesson">📖 HSK 3</div>
+<div class="lesson">📖 HSK 4</div>
+<div class="lesson">📖 HSK 5</div>
+<div class="lesson">📖 HSK 6</div>
+
+</div>
+
+</section>
+
+<section class="flashcard">
+
+<div class="card">
+
+<h1>你好</h1>
+
+<h2>nǐ hǎo</h2>
+
 <p>Xin chào</p>
 
-<button onclick="alert('Chào mừng bạn!')">
-Bắt đầu học
+<button id="speak">
+🔊 Phát âm
 </button>
+
+<button>
+❤️ Yêu thích
+</button>
+
 </div>
+
+</section>
+
+<nav>
+
+<button>🏠</button>
+
+<button>📚</button>
+
+<button>❤️</button>
+
+<button>👤</button>
+
+</nav>
+
+<script src="script.js"></script>
 
 </body>
 </html>
