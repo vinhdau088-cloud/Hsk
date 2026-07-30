@@ -1,0 +1,29 @@
+{
+  "hsk1": [
+    { "hanzi": "你好", "pinyin": "nǐ hǎo", "meaning": "Xin chào" },
+    { "hanzi": "谢谢", "pinyin": "xiè xie", "meaning": "Cảm ơn" },
+    { "hanzi": "再见", "pinyin": "zài jiàn", "meaning": "Tạm biệt" },
+    { "hanzi": "中国", "pinyin": "Zhōng guó", "meaning": "Trung Quốc" }
+  ],
+  "hsk2": [
+    { "hanzi": "准备", "pinyin": "zhǔn bèi", "meaning": "Chuẩn bị" },
+    { "hanzi": "开始", "pinyin": "kāi shǐ", "meaning": "Bắt đầu" },
+    { "hanzi": "运动", "pinyin": "yùn dòng", "meaning": "Vận động / Thể thao" }
+  ],
+  "hsk3": [
+    { "hanzi": "简单", "pinyin": "jiǎn dān", "meaning": "Đơn giản" },
+    { "hanzi": "努力", "pinyin": "nǔ lì", "meaning": "Nỗ lực / Cố gắng" }
+  ],
+  "hsk4": [
+    { "hanzi": "成功", "pinyin": "chéng gōng", "meaning": "Thành công" },
+    { "hanzi": "坚持", "pinyin": "jiān chí", "meaning": "Kiên trì" }
+  ],
+  "hsk5": [
+    { "hanzi": "梦想", "pinyin": "mèng xiǎng", "meaning": "Ước mơ" },
+    { "hanzi": "挑战", "pinyin": "tiǎo zhàn", "meaning": "Thử thách" }
+  ],
+  "hsk6": [
+    { "hanzi": "毅力", "pinyin": "yì lì", "meaning": "Nghị lực" },
+    { "hanzi": "突破", "pinyin": "tū pò", "meaning": "Bứt phá" }
+  ]
+}
