@@ -1,50 +1,16 @@
 import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
 
 export default function Home() {
   return (
     <>
       <Navbar />
 
+      <Hero />
+
       <main className="container">
 
-        {/* Hero */}
-        <section
-          style={{
-            padding: "80px 0",
-            textAlign: "center"
-          }}
-        >
-          <h1 className="title">
-            Học tiếng Trung
-            <br />
-            thông minh hơn.
-          </h1>
-
-          <p className="subtitle" style={{ marginTop: 20 }}>
-            Học HSK, TOCFL, Flashcards, Từ điển,
-            luyện thi và theo dõi tiến độ.
-          </p>
-
-          <div
-            style={{
-              marginTop: 40,
-              display: "flex",
-              justifyContent: "center",
-              gap: 20,
-              flexWrap: "wrap"
-            }}
-          >
-            <button className="btn-primary">
-              🚀 Bắt đầu học
-            </button>
-
-            <button className="btn-outline">
-              📚 Luyện thi
-            </button>
-          </div>
-        </section>
-
-        {/* Search */}
+        {/* Tìm kiếm */}
         <section className="card">
 
           <h2>🔍 Tìm kiếm từ vựng</h2>
@@ -52,19 +18,21 @@ export default function Home() {
           <div
             style={{
               display: "flex",
-              gap: 15,
-              marginTop: 20,
+              gap: "15px",
+              marginTop: "20px",
               flexWrap: "wrap"
             }}
           >
             <input
+              type="text"
               placeholder="Nhập chữ Hán, Pinyin hoặc nghĩa..."
               style={{
                 flex: 1,
-                minWidth: 250,
-                padding: 15,
-                borderRadius: 10,
-                border: "1px solid #ddd"
+                minWidth: "250px",
+                padding: "15px",
+                borderRadius: "12px",
+                border: "1px solid #ddd",
+                fontSize: "16px"
               }}
             />
 
@@ -75,39 +43,47 @@ export default function Home() {
 
         </section>
 
-        {/* HSK */}
-        <section style={{ marginTop: 50 }}>
+        {/* Khóa học HSK */}
+        <section style={{ marginTop: "50px" }}>
 
-          <h2 style={{ marginBottom: 25 }}>
+          <h2
+            style={{
+              marginBottom: "25px",
+              color: "white"
+            }}
+          >
             📚 Khóa học HSK
           </h2>
 
           <div
             style={{
               display: "grid",
-              gridTemplateColumns:
-                "repeat(auto-fit,minmax(220px,1fr))",
-              gap: 20
+              gridTemplateColumns: "repeat(auto-fit,minmax(220px,1fr))",
+              gap: "20px"
             }}
           >
-            {[1,2,3,4,5,6].map((i)=>(
-              <div className="card" key={i}>
 
-                <h3>HSK {i}</h3>
+            {[1, 2, 3, 4, 5, 6].map((level) => (
 
-                <p style={{marginTop:10}}>
-                  Học từ vựng, ngữ pháp và luyện đề.
+              <div className="card" key={level}>
+
+                <h3>HSK {level}</h3>
+
+                <p style={{ marginTop: "10px" }}>
+                  Học từ vựng, ngữ pháp, luyện nghe và luyện đề.
                 </p>
 
                 <button
                   className="btn-primary"
-                  style={{marginTop:20}}
+                  style={{ marginTop: "20px" }}
                 >
                   Bắt đầu
                 </button>
 
               </div>
+
             ))}
+
           </div>
 
         </section>
