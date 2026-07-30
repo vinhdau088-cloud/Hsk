@@ -1,46 +1,19 @@
 import "./globals.css";
-import Navbar from "@/components/Navbar";
+import type { Metadata } from "next";
 
-
-export const metadata = {
-
-title:"Hanzi Master",
-
-description:"HSK TOCFL Learning"
-
+export const metadata: Metadata = {
+  title: "Hanzi Master",
+  description: "Website học tiếng Trung",
 };
 
-
-
 export default function RootLayout({
-
-children,
-
-}:{
-
-children:React.ReactNode;
-
-}){
-
-
-return (
-
-<html lang="vi">
-
-<body>
-
-
-<Navbar />
-
-
-{children}
-
-
-</body>
-
-</html>
-
-);
-
-
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="vi">
+      <body>{children}</body>
+    </html>
+  );
 }
